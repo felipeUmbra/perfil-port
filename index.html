@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Santana Santos | QA Lead Portfolio</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* CSS Integrado: Paleta de cores de alto contraste focada em legibilidade profissional */
         :root {
             --bg-color: #0d1117;
             --text-main: #c9d1d9;
@@ -70,6 +71,22 @@
             font-size: 1.8rem;
         }
 
+        h3 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border);
@@ -122,7 +139,7 @@
             color: var(--accent);
         }
 
-        /* Language Toggle Button */
+        /* Botão de Idioma */
         .lang-toggle {
             position: fixed;
             top: 20px;
@@ -136,6 +153,7 @@
             font-weight: bold;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             transition: background-color 0.3s ease;
+            z-index: 1000;
         }
 
         .lang-toggle:hover {
@@ -158,130 +176,139 @@
     <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">EN | English</button>
 
     <header>
-        <h1 data-i18n="name">Felipe Santana Santos [cite: 1]</h1>
+        <h1 data-i18n="name">Felipe Santana Santos</h1>
         <p class="contact-info">
-            <span data-i18n="location">São Paulo, SP | (11) 97212-8118 [cite: 2]</span><br>
-            <a href="mailto:felipe.santanasantos@yahoo.com.br">felipe.santanasantos@yahoo.com.br</a> | 
-            <a href="https://linkedin.com/in/felipessantos/" target="_blank">linkedin.com/in/felipessantos/</a>
+            <span data-i18n="location">São Paulo, SP</span><br>
+            <a href="mailto:felipe.santanasantos@yahoo.com.br"><i class="fas fa-envelope"></i> felipe.santanasantos@yahoo.com.br</a> | 
+            <a href="https://linkedin.com/in/felipessantos/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/felipessantos/</a> |
+            <a href="https://github.com/felipeUmbra" target="_blank"><i class="fab fa-github"></i> github.com/felipeUmbra</a>
         </p>
     </header>
 
     <div class="container">
         <section>
-            <h2 data-i18n="summary_title">Resumo Profissional [cite: 3]</h2>
+            <h2 data-i18n="summary_title">Resumo Profissional</h2>
             <div class="card">
                 <ul>
-                    <li data-i18n="summary_1">Liderança em QA com quase 20 anos de experiência em tecnologia, especializado em Qualidade de Software com foco em mobilidade (iOS/Android), sistemas de pagamento e games. [cite: 4]</li>
-                    <li data-i18n="summary_2">Experiência consolidada como QA Lead em empresas globais (Shopee/Monee e Glu Mobile), gerenciando stakeholders, otimizando fluxos de entrega e eliminando impedimentos (blockers). [cite: 5]</li>
-                    <li data-i18n="summary_3">Expertise na aplicação de metodologias ágeis, métricas de qualidade e desenvolvimento de talentos (coaching/mentoria). [cite: 6]</li>
+                    <li data-i18n="summary_1">Profissional de liderança em QA com duas décadas de vivência na área de tecnologia. Especialista em Qualidade de Software com ênfase em plataformas móveis (iOS e Android), soluções de pagamento e jogos.</li>
+                    <li data-i18n="summary_2">Sólida trajetória atuando como QA Lead em corporações globais, incluindo Shopee, Monee e Glu Mobile. Especialidade em gestão de stakeholders, otimização de esteiras de entrega e remoção de bloqueios operacionais.</li>
+                    <li data-i18n="summary_3">Amplo domínio em práticas ágeis, acompanhamento de métricas de qualidade e capacitação de equipes através de mentoria e coaching.</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2 data-i18n="skills_title">Competências Técnicas e Ferramentas [cite: 7]</h2>
+            <h2 data-i18n="skills_title">Competências Técnicas</h2>
             <div class="card skills-grid">
                 <div class="skill-item">
-                    <strong data-i18n="skill_mgmt">Gestão de QA:</strong> <span data-i18n="skill_mgmt_desc">QA Lead, Planejamento de Testes, Estratégia de Qualidade, Gerenciamento de Stakeholders. [cite: 8]</span>
+                    <strong data-i18n="skill_mgmt">Gestão de Qualidade:</strong> <span data-i18n="skill_mgmt_desc">Liderança de QA, Planejamento estratégico de testes e Gestão de partes interessadas.</span>
                 </div>
                 <div class="skill-item">
-                    <strong data-i18n="skill_tech">Mobile & Web:</strong> <span data-i18n="skill_tech_desc">Testes em iOS, Android, Java, Funcionalidades de Pagamento e Antifraude. [cite: 9]</span>
+                    <strong data-i18n="skill_tech">Tecnologias Mobile e Web:</strong> <span data-i18n="skill_tech_desc">Ensaios em dispositivos iOS e Android, Java, Validação de sistemas de Pagamento e regras Antifraude.</span>
                 </div>
                 <div class="skill-item">
-                    <strong data-i18n="skill_meth">Metodologias:</strong> <span data-i18n="skill_meth_desc">Ágil (Scrum/Kanban), Melhoria Operacional, KPIs e Indicadores de Performance. [cite: 10, 11]</span>
+                    <strong data-i18n="skill_meth">Práticas e Metodologias:</strong> <span data-i18n="skill_meth_desc">Cultura Ágil (Scrum e Kanban), Aprimoramento de operações e acompanhamento de KPIs.</span>
                 </div>
                 <div class="skill-item">
-                    <strong data-i18n="skill_lead">Liderança:</strong> <span data-i18n="skill_lead_desc">Coaching, Mentoria de QAs, Desenvolvimento de Hard/Soft Skills, Gestão de Times. [cite: 12, 13]</span>
+                    <strong data-i18n="skill_lead">Gestão de Pessoas:</strong> <span data-i18n="skill_lead_desc">Mentoria técnica, Coaching, Evolução de habilidades interpessoais e Coordenação de times.</span>
                 </div>
                 <div class="skill-item">
-                    <strong data-i18n="skill_tools">Ferramentas:</strong> <span data-i18n="skill_tools_desc">Excel VBA, Análise de Sistemas, Test Plans, Bug Tracking. [cite: 14]</span>
+                    <strong data-i18n="skill_tools">Ferramentas:</strong> <span data-i18n="skill_tools_desc">Análise de Sistemas, Rastreamento de falhas, Planos de Teste e Excel (VBA).</span>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2 data-i18n="exp_title">Experiência Profissional [cite: 15]</h2>
+            <h2 data-i18n="exp_title">Histórico Profissional</h2>
 
             <div class="card">
                 <div class="job-header">
-                    <div class="job-title">Monee [cite: 16] - <span data-i18n="monee_role">QA Lead [cite: 17]</span></div>
-                    <div class="job-date" data-i18n="monee_date">Dezembro de 2024 - Atual [cite: 17]</div>
+                    <div class="job-title">Monee - <span data-i18n="monee_role">Líder de QA</span></div>
+                    <div class="job-date" data-i18n="monee_date">Dez. de 2024 - Jan. 2026</div>
                 </div>
                 <ul>
-                    <li data-i18n="monee_1">Coordenação completa do time de QAs, definindo estratégias para evitar gargalos (blockers) e otimizar o fluxo de entrega. [cite: 18, 19]</li>
+                    <li data-i18n="monee_1">Gestão integral da equipe de qualidade, estabelecendo táticas para prevenir gargalos e melhorar a eficiência das entregas diárias.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <div class="job-header">
-                    <div class="job-title">Shopee [cite: 20] - <span data-i18n="shopee_role1">QA Lead [cite: 23]</span></div>
-                    <div class="job-date" data-i18n="shopee_date1">Março de 2022 - Novembro de 2024 [cite: 23]</div>
+                    <div class="job-title">Shopee - <span data-i18n="shopee_role1">Líder de QA</span></div>
+                    <div class="job-date" data-i18n="shopee_date1">Mar. de 2022 - Nov. de 2024</div>
                 </div>
                 <ul>
-                    <li data-i18n="shopee_desc1_1">Interface direta com stakeholders para negociação de prazos e alinhamento de demandas conforme a capacidade técnica e objetivos de negócio. [cite: 21]</li>
-                    <li data-i18n="shopee_desc1_2">Foco no desenvolvimento técnico e comportamental dos colaboradores e facilitação de projetos no setor financeiro (fintech). [cite: 22]</li>
-                    <li data-i18n="shopee_desc1_3">Liderança de times de QA em ambiente de alto volume e escala global. [cite: 24]</li>
-                    <li data-i18n="shopee_desc1_4">Gerenciamento de fluxos de teste e remoção de impedimentos técnicos para garantir deploys contínuos e seguros. [cite: 25]</li>
+                    <li data-i18n="shopee_desc1_1">Comunicação direta com as partes interessadas visando negociar prazos e alinhar as necessidades do negócio com a capacidade do time.</li>
+                    <li data-i18n="shopee_desc1_2">Dedicação ao aprimoramento técnico e comportamental do time, atuando como facilitador de iniciativas no segmento financeiro.</li>
+                    <li data-i18n="shopee_desc1_3">Gestão de equipes de qualidade operando em cenários de alta demanda e alcance internacional.</li>
+                    <li data-i18n="shopee_desc1_4">Controle das esteiras de testes e resolução de obstáculos técnicos, assegurando implantações seguras.</li>
                 </ul>
                 <br>
                 <div class="job-header">
-                    <div class="job-title" data-i18n="shopee_role2">Product QA Senior [cite: 26]</div>
-                    <div class="job-date" data-i18n="shopee_date2">Janeiro de 2022 - Março de 2022 [cite: 26]</div>
+                    <div class="job-title" data-i18n="shopee_role2">Product QA Sênior</div>
+                    <div class="job-date" data-i18n="shopee_date2">Jan. de 2022 - Mar. de 2022</div>
                 </div>
                 <ul>
-                    <li data-i18n="shopee_desc2_1">Atuação consultiva em testes de sistemas de pagamentos, auxiliando na tomada de decisão de negócio e fortalecimento da marca. [cite: 28, 29]</li>
-                    <li data-i18n="shopee_desc2_2">Mentoria e tutoria de novos QAs na estrutura da empresa. [cite: 30]</li>
+                    <li data-i18n="shopee_desc2_1">Trabalho consultivo na validação de plataformas de pagamento, apoiando decisões estratégicas e o fortalecimento do produto.</li>
+                    <li data-i18n="shopee_desc2_2">Apoio e treinamento para novos analistas integrados à estrutura corporativa.</li>
                 </ul>
                 <br>
                 <div class="job-header">
-                    <div class="job-title" data-i18n="shopee_role3">Product QA Pleno [cite: 31]</div>
-                    <div class="job-date" data-i18n="shopee_date3">Novembro de 2020 - Dezembro de 2021 [cite: 31]</div>
+                    <div class="job-title" data-i18n="shopee_role3">Product QA Pleno</div>
+                    <div class="job-date" data-i18n="shopee_date3">Nov. de 2020 - Dez. de 2021</div>
                 </div>
                 <ul>
-                    <li data-i18n="shopee_desc3_1">Execução de testes funcionais críticos voltados a pagamentos e prevenção de fraudes em aplicativo e site. [cite: 32]</li>
-                    <li data-i18n="shopee_desc3_2">Atuação como facilitador do squad, conduzindo cerimônias (dailies) e multiplicando conhecimento técnico entre os membros do time. [cite: 33]</li>
+                    <li data-i18n="shopee_desc3_1">Realização de testes funcionais de alta criticidade focados em transações financeiras e bloqueio de fraudes.</li>
+                    <li data-i18n="shopee_desc3_2">Atuação como ponto focal do squad, guiando reuniões diárias e disseminando conhecimento entre os pares.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <div class="job-header">
-                    <div class="job-title">Conduent [cite: 34] - <span data-i18n="conduent_role">Analista de QA [cite: 35]</span></div>
-                    <div class="job-date" data-i18n="conduent_date">Setembro de 2018 - Setembro de 2020 [cite: 35]</div>
+                    <div class="job-title">Conduent - <span data-i18n="conduent_role">Analista de Qualidade</span></div>
+                    <div class="job-date" data-i18n="conduent_date">Set. de 2018 - Set. de 2020</div>
                 </div>
                 <ul>
-                    <li data-i18n="conduent_1">Análise de métricas e indicadores operacionais sob metodologias ágeis. [cite: 37]</li>
-                    <li data-i18n="conduent_2">Identificação de oportunidades de melhoria em processos de atendimento e operação. [cite: 38]</li>
+                    <li data-i18n="conduent_1">Avaliação de métricas operacionais utilizando frameworks ágeis.</li>
+                    <li data-i18n="conduent_2">Mapeamento de oportunidades para aprimorar os fluxos de atendimento ao cliente.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <div class="job-header">
-                    <div class="job-title">Xerox [cite: 36] - <span data-i18n="xerox_role">Analista Bilingue [cite: 39]</span></div>
-                    <div class="job-date" data-i18n="xerox_date">Dezembro de 2013 - Setembro de 2018 [cite: 39]</div>
+                    <div class="job-title">Xerox - <span data-i18n="xerox_role">Analista Bilíngue</span></div>
+                    <div class="job-date" data-i18n="xerox_date">Dez. de 2013 - Set. de 2018</div>
                 </div>
                 <ul>
-                    <li data-i18n="xerox_1">Análise de dados de uso e contestação de irregularidades para grandes clientes do setor de tecnologia. [cite: 40]</li>
+                    <li data-i18n="xerox_1">Verificação de dados de consumo e tratamento de contestações para clientes corporativos de tecnologia.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <div class="job-header">
-                    <div class="job-title">Glu Mobile (EA) [cite: 41] - <span data-i18n="glu_role">Tech Ops Analyst/QA Tester [cite: 42]</span></div>
-                    <div class="job-date" data-i18n="glu_date">Outubro de 2010 - Dezembro de 2012 [cite: 42]</div>
+                    <div class="job-title">Glu Mobile (EA) - <span data-i18n="glu_role">Analista de Tech Ops e QA</span></div>
+                    <div class="job-date" data-i18n="glu_date">Out. de 2010 - Dez. de 2012</div>
                 </div>
                 <ul>
-                    <li data-i18n="glu_1">Execução de testes complexos para jogos mobile em Android, iOS e Java. [cite: 43]</li>
-                    <li data-i18n="glu_2">Análise de compatibilidade de dispositivos e contato técnico com operadoras europeias. [cite: 44]</li>
+                    <li data-i18n="glu_1">Condução de ensaios aprofundados em jogos para plataformas mobile (Java, iOS e Android).</li>
+                    <li data-i18n="glu_2">Verificação de compatibilidade de hardware e interação técnica com provedores de telecomunicações na Europa.</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2 data-i18n="edu_title">Formação Acadêmica [cite: 45]</h2>
+            <h2 data-i18n="edu_title">Formação Educacional</h2>
             <div class="card">
                 <ul>
-                    <li data-i18n="edu_1">Tecnólogo em Jogos Digitais (Produção) - Centro Universitário Senac [cite: 46]</li>
-                    <li data-i18n="edu_2">Tecnólogo em Análise e Desenvolvimento de Sistemas - Faculdade João XXIII [cite: 47]</li>
+                    <li data-i18n="edu_1">Tecnologia em Jogos Digitais (Foco em Produção) - Centro Universitário Senac</li>
+                    <li data-i18n="edu_2">Tecnologia em Análise e Desenvolvimento de Sistemas - Faculdade João XXIII</li>
+                </ul>
+                <h3 data-i18n="certs_title">Certificações e Cursos</h3>
+                <ul>
+                    <li><a href="https://cursos.alura.com.br/user/felipesantsant/degree-excel-vba-old-2374/certificate" target="_blank" data-i18n="cert_excel">Excel VBA</a> <span data-i18n="cert_excel_desc">- Automação e macros (Alura).</span></li>
+                    <li><a href="https://cursos.alura.com.br/user/felipesantsant/degree-gestao-qualidade-v203893-203893/certificate" target="_blank" data-i18n="cert_qa">Gestão de Qualidade</a> <span data-i18n="cert_qa_desc">- Métricas e processos de qualidade (Alura).</span></li>
+                    <li><a href="https://cursos.alura.com.br/user/felipesantsant/degree-autolideranca-v165886-165886/certificate" target="_blank" data-i18n="cert_autolead">Autoliderança</a> <span data-i18n="cert_autolead_desc">- Foco e produtividade (Alura).</span></li>
+                    <li><a href="https://cursos.alura.com.br/user/felipesantsant/degree-negociacao-182220/certificate" target="_blank" data-i18n="cert_neg">Negociação</a> <span data-i18n="cert_neg_desc">- Técnicas de comunicação e acordos (Alura).</span></li>
+                    <li><a href="https://cursos.alura.com.br/user/felipesantsant/degree-tech-lead-702709/certificate" target="_blank" data-i18n="cert_techlead">Tech Lead</a> <span data-i18n="cert_techlead_desc">- Liderança técnica e arquitetura (Alura).</span></li>
                 </ul>
             </div>
         </section>
@@ -290,82 +317,96 @@
     <script>
         const translations = {
             "pt-BR": {
-                name: "Felipe Santana Santos [cite: 1]",
-                location: "São Paulo, SP | (11) 97212-8118 [cite: 2]",
-                summary_title: "Resumo Profissional [cite: 3]",
-                summary_1: "Liderança em QA com quase 20 anos de experiência em tecnologia, especializado em Qualidade de Software com foco em mobilidade (iOS/Android), sistemas de pagamento e games. [cite: 4]",
-                summary_2: "Experiência consolidada como QA Lead em empresas globais (Shopee/Monee e Glu Mobile), gerenciando stakeholders, otimizando fluxos de entrega e eliminando impedimentos (blockers). [cite: 5]",
-                summary_3: "Expertise na aplicação de metodologias ágeis, métricas de qualidade e desenvolvimento de talentos (coaching/mentoria). [cite: 6]",
-                skills_title: "Competências Técnicas e Ferramentas [cite: 7]",
-                skill_mgmt: "Gestão de QA:", skill_mgmt_desc: " QA Lead, Planejamento de Testes, Estratégia de Qualidade, Gerenciamento de Stakeholders. [cite: 8]",
-                skill_tech: "Mobile & Web:", skill_tech_desc: " Testes em iOS, Android, Java, Funcionalidades de Pagamento e Antifraude. [cite: 9]",
-                skill_meth: "Metodologias:", skill_meth_desc: " Ágil (Scrum/Kanban), Melhoria Operacional, KPIs e Indicadores de Performance. [cite: 10, 11]",
-                skill_lead: "Liderança:", skill_lead_desc: " Coaching, Mentoria de QAs, Desenvolvimento de Hard/Soft Skills, Gestão de Times. [cite: 12, 13]",
-                skill_tools: "Ferramentas:", skill_tools_desc: " Excel VBA, Análise de Sistemas, Test Plans, Bug Tracking. [cite: 14]",
-                exp_title: "Experiência Profissional [cite: 15]",
-                monee_role: "QA Lead [cite: 17]", monee_date: "Dezembro de 2024 - Atual [cite: 17]",
-                monee_1: "Coordenação completa do time de QAs, definindo estratégias para evitar gargalos (blockers) e otimizar o fluxo de entrega. [cite: 18, 19]",
-                shopee_role1: "QA Lead [cite: 23]", shopee_date1: "Março de 2022 - Novembro de 2024 [cite: 23]",
-                shopee_desc1_1: "Interface direta com stakeholders para negociação de prazos e alinhamento de demandas conforme a capacidade técnica e objetivos de negócio. [cite: 21]",
-                shopee_desc1_2: "Foco no desenvolvimento técnico e comportamental dos colaboradores e facilitação de projetos no setor financeiro (fintech). [cite: 22]",
-                shopee_desc1_3: "Liderança de times de QA em ambiente de alto volume e escala global. [cite: 24]",
-                shopee_desc1_4: "Gerenciamento de fluxos de teste e remoção de impedimentos técnicos para garantir deploys contínuos e seguros. [cite: 25]",
-                shopee_role2: "Product QA Senior [cite: 26]", shopee_date2: "Janeiro de 2022 - Março de 2022 [cite: 26]",
-                shopee_desc2_1: "Atuação consultiva em testes de sistemas de pagamentos, auxiliando na tomada de decisão de negócio e fortalecimento da marca. [cite: 28, 29]",
-                shopee_desc2_2: "Mentoria e tutoria de novos QAs na estrutura da empresa. [cite: 30]",
-                shopee_role3: "Product QA Pleno [cite: 31]", shopee_date3: "Novembro de 2020 - Dezembro de 2021 [cite: 31]",
-                shopee_desc3_1: "Execução de testes funcionais críticos voltados a pagamentos e prevenção de fraudes em aplicativo e site. [cite: 32]",
-                shopee_desc3_2: "Atuação como facilitador do squad, conduzindo cerimônias (dailies) e multiplicando conhecimento técnico entre os membros do time. [cite: 33]",
-                conduent_role: "Analista de QA [cite: 35]", conduent_date: "Setembro de 2018 - Setembro de 2020 [cite: 35]",
-                conduent_1: "Análise de métricas e indicadores operacionais sob metodologias ágeis. [cite: 37]",
-                conduent_2: "Identificação de oportunidades de melhoria em processos de atendimento e operação. [cite: 38]",
-                xerox_role: "Analista Bilingue [cite: 39]", xerox_date: "Dezembro de 2013 - Setembro de 2018 [cite: 39]",
-                xerox_1: "Análise de dados de uso e contestação de irregularidades para grandes clientes do setor de tecnologia. [cite: 40]",
-                glu_role: "Tech Ops Analyst/QA Tester [cite: 42]", glu_date: "Outubro de 2010 - Dezembro de 2012 [cite: 42]",
-                glu_1: "Execução de testes complexos para jogos mobile em Android, iOS e Java. [cite: 43]",
-                glu_2: "Análise de compatibilidade de dispositivos e contato técnico com operadoras europeias. [cite: 44]",
-                edu_title: "Formação Acadêmica [cite: 45]",
-                edu_1: "Tecnólogo em Jogos Digitais (Produção) - Centro Universitário Senac [cite: 46]",
-                edu_2: "Tecnólogo em Análise e Desenvolvimento de Sistemas - Faculdade João XXIII [cite: 47]"
+                name: "Felipe Santana Santos",
+                location: "São Paulo, SP",
+                summary_title: "Resumo Profissional",
+                summary_1: "Profissional de liderança em QA com duas décadas de vivência na área de tecnologia. Especialista em Qualidade de Software com ênfase em plataformas móveis (iOS e Android), soluções de pagamento e jogos.",
+                summary_2: "Sólida trajetória atuando como QA Lead em corporações globais, incluindo Shopee, Monee e Glu Mobile. Especialidade em gestão de stakeholders, otimização de esteiras de entrega e remoção de bloqueios operacionais.",
+                summary_3: "Amplo domínio em práticas ágeis, acompanhamento de métricas de qualidade e capacitação de equipes através de mentoria e coaching.",
+                skills_title: "Competências Técnicas",
+                skill_mgmt: "Gestão de Qualidade:", skill_mgmt_desc: " Liderança de QA, Planejamento estratégico de testes e Gestão de partes interessadas.",
+                skill_tech: "Tecnologias Mobile e Web:", skill_tech_desc: " Ensaios em dispositivos iOS e Android, Java, Validação de sistemas de Pagamento e regras Antifraude.",
+                skill_meth: "Práticas e Metodologias:", skill_meth_desc: " Cultura Ágil (Scrum e Kanban), Aprimoramento de operações e acompanhamento de KPIs.",
+                skill_lead: "Gestão de Pessoas:", skill_lead_desc: " Mentoria técnica, Coaching, Evolução de habilidades interpessoais e Coordenação de times.",
+                skill_tools: "Ferramentas:", skill_tools_desc: " Análise de Sistemas, Rastreamento de falhas, Planos de Teste e Excel (VBA).",
+                exp_title: "Histórico Profissional",
+                monee_role: "Líder de QA", monee_date: "Dez. de 2024 - Atual",
+                monee_1: "Gestão integral da equipe de qualidade, estabelecendo táticas para prevenir gargalos e melhorar a eficiência das entregas diárias.",
+                shopee_role1: "Líder de QA", shopee_date1: "Mar. de 2022 - Nov. de 2024",
+                shopee_desc1_1: "Comunicação direta com as partes interessadas visando negociar prazos e alinhar as necessidades do negócio com a capacidade do time.",
+                shopee_desc1_2: "Dedicação ao aprimoramento técnico e comportamental do time, atuando como facilitador de iniciativas no segmento financeiro.",
+                shopee_desc1_3: "Gestão de equipes de qualidade operando em cenários de alta demanda e alcance internacional.",
+                shopee_desc1_4: "Controle das esteiras de testes e resolução de obstáculos técnicos, assegurando implantações seguras.",
+                shopee_role2: "Product QA Sênior", shopee_date2: "Jan. de 2022 - Mar. de 2022",
+                shopee_desc2_1: "Trabalho consultivo na validação de plataformas de pagamento, apoiando decisões estratégicas e o fortalecimento do produto.",
+                shopee_desc2_2: "Apoio e treinamento para novos analistas integrados à estrutura corporativa.",
+                shopee_role3: "Product QA Pleno", shopee_date3: "Nov. de 2020 - Dez. de 2021",
+                shopee_desc3_1: "Realização de testes funcionais de alta criticidade focados em transações financeiras e bloqueio de fraudes.",
+                shopee_desc3_2: "Atuação como ponto focal do squad, guiando reuniões diárias e disseminando conhecimento entre os pares.",
+                conduent_role: "Analista de Qualidade", conduent_date: "Set. de 2018 - Set. de 2020",
+                conduent_1: "Avaliação de métricas operacionais utilizando frameworks ágeis.",
+                conduent_2: "Mapeamento de oportunidades para aprimorar os fluxos de atendimento ao cliente.",
+                xerox_role: "Analista Bilíngue", xerox_date: "Dez. de 2013 - Set. de 2018",
+                xerox_1: "Verificação de dados de consumo e tratamento de contestações para clientes corporativos de tecnologia.",
+                glu_role: "Analista de Tech Ops e QA", glu_date: "Out. de 2010 - Dez. de 2012",
+                glu_1: "Condução de ensaios aprofundados em jogos para plataformas mobile (Java, iOS e Android).",
+                glu_2: "Verificação de compatibilidade de hardware e interação técnica com provedores de telecomunicações na Europa.",
+                edu_title: "Formação Educacional",
+                edu_1: "Tecnologia em Jogos Digitais (Foco em Produção) - Centro Universitário Senac",
+                edu_2: "Tecnologia em Análise e Desenvolvimento de Sistemas - Faculdade João XXIII",
+                certs_title: "Certificações e Cursos",
+                cert_excel: "Excel VBA", cert_excel_desc: " - Automação e macros (Alura).",
+                cert_qa: "Gestão de Qualidade", cert_qa_desc: " - Métricas e processos de qualidade (Alura).",
+                cert_lead1: "Minha Primeira Liderança", cert_lead1_desc: " - Fundamentos de gestão de pessoas (Alura).",
+                cert_autolead: "Autoliderança", cert_autolead_desc: " - Foco e produtividade (Alura).",
+                cert_neg: "Negociação", cert_neg_desc: " - Técnicas de comunicação e acordos (Alura).",
+                cert_techlead: "Tech Lead", cert_techlead_desc: " - Liderança técnica e arquitetura (Alura)."
             },
             "en": {
-                name: "Felipe Santana Santos [cite: 1]",
-                location: "São Paulo, SP | (11) 97212-8118 [cite: 2]",
-                summary_title: "Professional Summary [cite: 3]",
-                summary_1: "QA Leadership with nearly 20 years of technology experience, specializing in Software Quality with a focus on mobility (iOS/Android), payment systems, and games. [cite: 4]",
-                summary_2: "Consolidated experience as a QA Lead in global companies (Shopee/Monee and Glu Mobile), managing stakeholders, optimizing delivery workflows, and eliminating blockers. [cite: 5]",
-                summary_3: "Expertise in the application of agile methodologies, quality metrics, and talent development (coaching/mentoring). [cite: 6]",
-                skills_title: "Technical Skills & Tools [cite: 7]",
-                skill_mgmt: "QA Management:", skill_mgmt_desc: " QA Lead, Test Planning, Quality Strategy, Stakeholder Management. [cite: 8]",
-                skill_tech: "Mobile & Web:", skill_tech_desc: " Testing in iOS, Android, Java, Payment and Anti-Fraud functionalities. [cite: 9]",
-                skill_meth: "Methodologies:", skill_meth_desc: " Agile (Scrum/Kanban), Operational Improvement, KPIs and Performance Indicators. [cite: 10, 11]",
-                skill_lead: "Leadership:", skill_lead_desc: " Coaching, QA Mentoring, Hard/Soft Skills Development, Team Management. [cite: 12, 13]",
-                skill_tools: "Tools:", skill_tools_desc: " Excel VBA, Systems Analysis, Test Plans, Bug Tracking. [cite: 14]",
-                exp_title: "Professional Experience [cite: 15]",
-                monee_role: "QA Lead [cite: 17]", monee_date: "December 2024 - Present [cite: 17]",
-                monee_1: "Full coordination of the QA team, defining strategies to avoid bottlenecks (blockers) and optimize the delivery flow. [cite: 18, 19]",
-                shopee_role1: "QA Lead [cite: 23]", shopee_date1: "March 2022 - November 2024 [cite: 23]",
-                shopee_desc1_1: "Direct interface with stakeholders to negotiate deadlines and align demands according to technical capacity and business objectives. [cite: 21]",
-                shopee_desc1_2: "Focus on the technical and behavioral development of employees and facilitation of projects in the financial sector (fintech). [cite: 22]",
-                shopee_desc1_3: "Leadership of QA teams in a high-volume, global-scale environment. [cite: 24]",
-                shopee_desc1_4: "Management of test workflows and removal of technical impediments to ensure continuous and secure deployments. [cite: 25]",
-                shopee_role2: "Senior Product QA [cite: 26]", shopee_date2: "January 2022 - March 2022 [cite: 26]",
-                shopee_desc2_1: "Consultative role in payment system testing, assisting in business decision-making and brand strengthening. [cite: 28, 29]",
-                shopee_desc2_2: "Mentoring and tutoring new QAs within the company's structure. [cite: 30]",
-                shopee_role3: "Mid-level Product QA [cite: 31]", shopee_date3: "November 2020 - December 2021 [cite: 31]",
-                shopee_desc3_1: "Execution of critical functional tests focused on payments and fraud prevention across app and web. [cite: 32]",
-                shopee_desc3_2: "Acted as squad facilitator, leading agile ceremonies (dailies) and multiplying technical knowledge among team members. [cite: 33]",
-                conduent_role: "QA Analyst [cite: 35]", conduent_date: "September 2018 - September 2020 [cite: 35]",
-                conduent_1: "Analysis of metrics and operational indicators under agile methodologies. [cite: 37]",
-                conduent_2: "Identification of improvement opportunities in customer service and operational processes. [cite: 38]",
-                xerox_role: "Bilingual Analyst [cite: 39]", xerox_date: "December 2013 - September 2018 [cite: 39]",
-                xerox_1: "Analysis of usage data and dispute of irregularities for major clients in the technology sector. [cite: 40]",
-                glu_role: "Tech Ops Analyst/QA Tester [cite: 42]", glu_date: "October 2010 - December 2012 [cite: 42]",
-                glu_1: "Execution of complex tests for mobile games in Android, iOS, and Java. [cite: 43]",
-                glu_2: "Device compatibility analysis and technical contact with European mobile carriers. [cite: 44]",
-                edu_title: "Education [cite: 45]",
-                edu_1: "Associate Degree in Digital Games (Production) - Centro Universitário Senac [cite: 46]",
-                edu_2: "Associate Degree in Systems Analysis and Development - Faculdade João XXIII [cite: 47]"
+                name: "Felipe Santana Santos",
+                location: "São Paulo, SP",
+                summary_title: "Professional Summary",
+                summary_1: "QA Leadership professional with two decades of experience in the technology sector. Specialist in Software Quality with a strong focus on mobile platforms (iOS and Android), payment solutions, and gaming.",
+                summary_2: "Solid track record acting as a QA Lead in global corporations, including Shopee, Monee, and Glu Mobile. Expertise in stakeholder management, delivery pipeline optimization, and roadblock resolution.",
+                summary_3: "Extensive knowledge of agile practices, quality metrics tracking, and team empowerment through mentoring and coaching.",
+                skills_title: "Technical Skills",
+                skill_mgmt: "Quality Management:", skill_mgmt_desc: " QA Leadership, Strategic test planning, and Stakeholder management.",
+                skill_tech: "Mobile & Web Tech:", skill_tech_desc: " Testing on iOS and Android devices, Java, Payment systems validation, and Anti-fraud rules.",
+                skill_meth: "Practices & Methodologies:", skill_meth_desc: " Agile Culture (Scrum and Kanban), Operational improvement, and KPI tracking.",
+                skill_lead: "People Management:", skill_lead_desc: " Technical mentoring, Coaching, Soft skills evolution, and Team coordination.",
+                skill_tools: "Tools:", skill_tools_desc: " Systems Analysis, Bug tracking, Test Plans, and Excel (VBA).",
+                exp_title: "Professional Experience",
+                monee_role: "QA Lead", monee_date: "Dec 2024 - Present",
+                monee_1: "Comprehensive management of the quality team, establishing tactics to prevent bottlenecks and improve the efficiency of daily deliveries.",
+                shopee_role1: "QA Lead", shopee_date1: "Mar 2022 - Nov 2024",
+                shopee_desc1_1: "Direct communication with stakeholders to negotiate deadlines and align business needs with the team's capacity.",
+                shopee_desc1_2: "Dedication to the technical and behavioral improvement of the team, acting as a facilitator for initiatives in the financial segment.",
+                shopee_desc1_3: "Management of quality teams operating in high-demand scenarios and international scope.",
+                shopee_desc1_4: "Control of testing pipelines and resolution of technical obstacles, ensuring secure deployments.",
+                shopee_role2: "Senior Product QA", shopee_date2: "Jan 2022 - Mar 2022",
+                shopee_desc2_1: "Consultative work in the validation of payment platforms, supporting strategic decisions and product strengthening.",
+                shopee_desc2_2: "Support and training for new analysts integrated into the corporate structure.",
+                shopee_role3: "Mid-level Product QA", shopee_date3: "Nov 2020 - Dec 2021",
+                shopee_desc3_1: "Execution of highly critical functional tests focused on financial transactions and fraud blocking.",
+                shopee_desc3_2: "Acted as the squad's focal point, guiding daily meetings and disseminating knowledge among peers.",
+                conduent_role: "Quality Analyst", conduent_date: "Sep 2018 - Sep 2020",
+                conduent_1: "Evaluation of operational metrics using agile frameworks.",
+                conduent_2: "Mapping of opportunities to improve customer service workflows.",
+                xerox_role: "Bilingual Analyst", xerox_date: "Dec 2013 - Sep 2018",
+                xerox_1: "Verification of consumption data and handling of disputes for corporate technology clients.",
+                glu_role: "Tech Ops & QA Analyst", glu_date: "Oct 2010 - Dec 2012",
+                glu_1: "Conducted in-depth testing on mobile platform games (Java, iOS, and Android).",
+                glu_2: "Hardware compatibility verification and technical interaction with telecommunication providers in Europe.",
+                edu_title: "Educational Background",
+                edu_1: "Associate Degree in Digital Games (Production Focus) - Centro Universitário Senac",
+                edu_2: "Associate Degree in Systems Analysis and Development - Faculdade João XXIII",
+                certs_title: "Certifications & Courses",
+                cert_excel: "Excel VBA", cert_excel_desc: " - Automation and macros (Alura).",
+                cert_qa: "Quality Management", cert_qa_desc: " - Quality metrics and processes (Alura).",
+                cert_lead1: "My First Leadership", cert_lead1_desc: " - People management fundamentals (Alura).",
+                cert_autolead: "Self-Leadership", cert_autolead_desc: " - Focus and productivity (Alura).",
+                cert_neg: "Negotiation", cert_neg_desc: " - Communication and agreement techniques (Alura).",
+                cert_techlead: "Tech Lead", cert_techlead_desc: " - Technical leadership and architecture (Alura)."
             }
         };
 
@@ -374,10 +415,8 @@
         function toggleLanguage() {
             currentLang = currentLang === "pt-BR" ? "en" : "pt-BR";
             
-            // Update button text
             document.getElementById("langBtn").innerText = currentLang === "pt-BR" ? "EN | English" : "PT | Português";
             
-            // Update all elements with data-i18n attribute
             document.querySelectorAll("[data-i18n]").forEach(element => {
                 const key = element.getAttribute("data-i18n");
                 if (translations[currentLang][key]) {

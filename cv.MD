@@ -71,11 +71,28 @@ Tecnólogo, Análise e Desenvolvimento de Sistemas (2008 – 2009)
 •	[Formação Excel VBA (Alura)](https://cursos.alura.com.br/degree/certificate/aea6deb2-cad2-43c3-931f-0beda917f048?lang=pt_BR)
 •	[Liderança do Futuro 2025 (Instituto Four)](https://app.institutofour.org/verify/b1adf8037197cd418d91a0dca53e286978e0cabe)
 ## Projetos
-##### Instituto Gaio | Fevereiro de 2026 - Presente
+##### Shopee Chile | abril de 2022 – abril de 2022
+Participação como Product QA no lançamento da Shopee no Chile - (Processamento de pagamentos e práticas de teste)
 
-##### Shopee Chile | abril de 2022
-Participação como Product QA no lançamento da Shopee no Chile como mentor dos QAs locais para fluxos de testes, processamento de pagamento e boas práticas de teste.
-##### Shopee Argentina | nov de 2021 – dez de 2021
-Participação como Product QA no lançamento da Shopee no Argentina como mentor do time de projetos local para fluxos de testes, processamento de pagamento e boas práticas de teste e validação de funcionalidades
+##### Shopee Argentina | novembro de 2021 – dezembro de 2021
+Participação como Product QA no lançamento Shopee na Argentina - (Processamento de pagamentos)
 
+##### Psicanalista Solidário no Instituto Gaio | Fevereiro 2026 – Atual
+Prestar atendimento psicanalítico solidário para população carente que entra em contato com a Gaio, buscando suporte terapêutico e psicológico. 
 
+##### Desenvolvimento assistido por ferramentas de IA de ferramenta de otimização de currículo | Abril 2026 – Atual
+https://ai.studio/apps/8cea3553-209d-453d-a7ea-7fb058e8d417
+Devido a uma necessidade particular desenvolvi através do AI Studio o ATS Opt, que tem por objetivo receber e interpretar todas as experiencias e conhecimento relevante da carreira do profissional adaptando este conteúdo para dar enfoque naquilo que é mais relevante para os sistemas de rastreamento de candidato, permitindo um melhor posicionamento do profissional na busca de uma vaga de trabalho eliminando quaisquer informações menos relevantes para um sistema de rastreamento ou vaga desejada.
+
+##### Desenvolvimento assistido por ferramentas de IA de ferramenta para transcrição e legendagem | Abril 2026 – Atual
+https://ai.studio/apps/22855132-c4be-48e3-9333-1e6cc67a5b7c
+Para dar suporte ao meu projeto como psicanalista, desenvolvi essa ferramenta para transcrever os áudios das sessões de terapia, tendo assim o conteúdo completo do que foi tratado durante a sessão, podendo dar total foco ao analisando e me permitindo fazer anaálises posteriores de pontos relevantes e/ou recorrentes em terapia.
+Num segundo momento adicionei a função de legendagem para facilitar a legendagem de vídeos criados sobre conteúdo psicanalítico e também facilitar o consumo de vídeos em outros idiomas que não possuem legenda.
+
+##### Desenvolvimento assistido por ferramentas de IA de um gerador de quiz online | Janeiro 2026 – Atual
+felipeumbra.github.io/csv-quiz/
+Para facilitar os estudos durante o processo de obtenção da certificação CTFL desenvolvi o CSV Quiz, que me permite gerar Quizes configuráveis através de qualquer ferramenta de IA me permitindo gerar simulados e provas sobre quaisquer conteúdos de maneira focal, sem a necessidade de assinaturas de outros serviços ou gerar prompts longos da maneira que serviços de IA como o Notebook LM faz necessário.
+
+##### Desenvolvimento assistido por ferramentas de IA de um portal de gerenciamento de pacientes para profissionais da área da saúde mental | Março 2026 – Atual
+felipeumbra.github.io/PsychePortal/
+"O PsychePortal é uma aplicação web moderna, segura e de nível clínico, projetada especificamente para profissionais de saúde mental. Ele oferece um conjunto abrangente de ferramentas para gerenciar pacientes, agendar sessões, acompanhar notas clínicas e monitorar registros financeiros, tudo em um só lugar."

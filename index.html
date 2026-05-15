@@ -4,442 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Santana Santos | QA Lead Portfolio</title>
-    <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --text-main: #c9d1d9;
-            --text-muted: #8b949e;
-            --accent: #58a6ff;
-            --card-bg: #161b22;
-            --border: #30363d;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(180deg, #1f242c 0%, var(--bg-color) 100%);
-            border-bottom: 1px solid var(--border);
-        }
-
-        h1 {
-            color: var(--accent);
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-info a {
-            color: var(--text-muted);
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: var(--accent);
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            color: var(--accent);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
-
-        h3 {
-            color: var(--accent);
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .card a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .card a:hover {
-            text-decoration: underline;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent);
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .job-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--text-main);
-        }
-
-        .job-date {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-main);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .skill-item strong {
-            color: var(--accent);
-        }
-
-        /* Botão de Idioma */
-        .lang-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: var(--accent);
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            transition: background-color 0.3s ease;
-            z-index: 1000;
-        }
-
-        .lang-toggle:hover {
-            background-color: #1f6feb;
-        }
-
-        @media (max-width: 600px) {
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .job-date {
-                margin-top: 0.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">EN | English</button>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html" class="active" data-i18n="nav_projects">Projetos</a>
+            <a href="professional.html" data-i18n="nav_profile">Perfil Profissional</a>
+        </div>
+        <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">EN | English</button>
+    </nav>
 
     <header>
-        <h1 data-i18n="name">Felipe Santana Santos</h1>
+        <h1><span data-i18n="name_first">Felipe</span> <span data-i18n="name_last">Santana Santos</span></h1>
         <p class="contact-info">
             <span data-i18n="location">São Paulo, SP</span><br>
-            <a href="mailto:felipe.santanasantos@yahoo.com.br"><i class="fas fa-envelope"></i> felipe.santanasantos@yahoo.com.br</a> | 
-            <a href="https://linkedin.com/in/felipessantos/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/felipessantos/</a> |
-            <a href="https://github.com/felipeUmbra" target="_blank"><i class="fab fa-github"></i> github.com/felipeUmbra</a>
+            <a href="mailto:felipe.santanasantos@yahoo.com.br"><i class="fas fa-envelope"></i> Email</a> | 
+            <a href="https://linkedin.com/in/felipessantos/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://github.com/felipeUmbra" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </p>
     </header>
 
     <div class="container">
         <section>
-            <h2 data-i18n="summary_title">Resumo Profissional</h2>
-            <div class="card">
-                <ul>
-                    <li data-i18n="summary_1">Especialista em Qualidade de Software com quase 20 anos de experiência, foco em mobilidade, sistemas de pagamento e games (Shopee, Monee, Glu Mobile/EA).</li>
-                    <li data-i18n="summary_2">QA Lead experiente em gestão de stakeholders, otimização de fluxos de entrega e automação de processos para ganho de eficiência operacional.</li>
-                    <li data-i18n="summary_3">Focado em automação de testes, programação JS Vanilla/React com IA e preparação para certificações CTAL.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2 data-i18n="skills_title">Competências Técnicas</h2>
-            <div class="card skills-grid">
-                <div class="skill-item">
-                    <strong data-i18n="skill_mgmt">Gestão de Qualidade:</strong> <span data-i18n="skill_mgmt_desc">Liderança de QA, Planejamento estratégico de testes e Gestão de partes interessadas.</span>
-                </div>
-                <div class="skill-item">
-                    <strong data-i18n="skill_tech">Automação e Dev:</strong> <span data-i18n="skill_tech_desc">Python (scripts/cronjobs), Cypress, JavaScript Vanilla, React e ferramentas de IA.</span>
-                </div>
-                <div class="skill-item">
-                    <strong data-i18n="skill_meth">Práticas e Metodologias:</strong> <span data-i18n="skill_meth_desc">Cultura Ágil (Scrum e Kanban), Aprimoramento de operações e acompanhamento de KPIs.</span>
-                </div>
-                <div class="skill-item">
-                    <strong data-i18n="skill_lead">Gestão de Pessoas:</strong> <span data-i18n="skill_lead_desc">Mentoria técnica, Coaching, Evolução de habilidades interpessoais e Coordenação de times.</span>
-                </div>
-                <div class="skill-item">
-                    <strong data-i18n="skill_tools">Ferramentas:</strong> <span data-i18n="skill_tools_desc">Jira (automação via API), GitLab CI/CD, Test Case Management (Excel/Macros), iOS/Android Studio.</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 data-i18n="exp_title">Histórico Profissional</h2>
-
-            <div class="card">
-                <div class="job-header">
-                    <div class="job-title">Monee - <span data-i18n="monee_role">Líder de QA</span></div>
-                    <div class="job-date" data-i18n="monee_date">Dez. 2024 - Jan. 2026</div>
-                </div>
-                <ul>
-                    <li data-i18n="monee_1">Gestão integral da equipe de qualidade, estabelecendo táticas para prevenir gargalos e melhorar a eficiência das entregas diárias.</li>
-                    <li data-i18n="monee_2">Automação de tarefas do Jira via Python/GitLab, reduzindo 30h mensais de trabalho manual por membro do time.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <div class="job-header">
-                    <div class="job-title">Shopee - <span data-i18n="shopee_role1">Líder de QA</span></div>
-                    <div class="job-date" data-i18n="shopee_date1">Mar. 2022 - Nov. 2024</div>
-                </div>
-                <ul>
-                    <li data-i18n="shopee_desc1_1">Coordenação de times globais e gestão de stakeholders para alinhamento de prazos e capacidade produtiva.</li>
-                </ul>
-                <br>
-                <div class="job-header">
-                    <div class="job-title" data-i18n="shopee_role2">Product QA Sênior</div>
-                    <div class="job-date" data-i18n="shopee_date2">Jan. 2022 - Mar. 2022</div>
-                </div>
-                <ul>
-                    <li data-i18n="shopee_desc2_1">Início da automação de frontend com Cypress e desenvolvimento de framework proprietário de gestão de testes via Excel/Macros.</li>
-                </ul>
-                <br>
-                <div class="job-header">
-                    <div class="job-title" data-i18n="shopee_role3">Product QA Pleno</div>
-                    <div class="job-date" data-i18n="shopee_date3">Nov. 2020 - Dez. 2021</div>
-                </div>
-                <ul>
-                    <li data-i18n="shopee_desc3_1">Testes funcionais em features de pagamento e fraude, atuando como facilitador e multiplicador de conhecimento no squad.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <div class="job-header">
-                    <div class="job-title">Conduent - <span data-i18n="conduent_role">Analista de Qualidade</span></div>
-                    <div class="job-date" data-i18n="conduent_date">Set. 2018 - Set. 2020</div>
-                </div>
-                <ul>
-                    <li data-i18n="conduent_1">Avaliação de métricas operacionais utilizando frameworks ágeis.</li>
-                    <li data-i18n="conduent_2">Mapeamento de oportunidades para aprimorar os fluxos de atendimento ao cliente.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <div class="job-header">
-                    <div class="job-title">Xerox - <span data-i18n="xerox_role">Analista Bilíngue</span></div>
-                    <div class="job-date" data-i18n="xerox_date">Dez. 2013 - Set. 2018</div>
-                </div>
-                <ul>
-                    <li data-i18n="xerox_1">Verificação de dados de consumo e tratamento de contestações para clientes corporativos de tecnologia.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <div class="job-header">
-                    <div class="job-title">Glu Mobile (EA) - <span data-i18n="glu_role">Analista de Tech Ops e QA</span></div>
-                    <div class="job-date" data-i18n="glu_date">Out. de 2010 - Dez. de 2012</div>
-                </div>
-                <ul>
-                    <li data-i18n="glu_1">Condução de ensaios aprofundados em jogos para plataformas mobile (Java, iOS e Android).</li>
-                    <li data-i18n="glu_2">Verificação de compatibilidade de hardware e interação técnica com provedores de telecomunicações na Europa.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2 data-i18n="edu_title">Formação Educacional</h2>
-            <div class="card">
-                <h3 data-i18n="edu_graduations">Graduações</h3>
-                <ul>
-                    <li data-i18n="edu_1">Tecnologia em Jogos Digitais (Foco em Produção) - Centro Universitário Senac</li>
-                    <li data-i18n="edu_2">Tecnologia em Análise e Desenvolvimento de Sistemas - Faculdade João XXIII</li>
-                </ul>
-                <h3 data-i18n="certs_title">Certificações</h3>
-                <ul>
-                    <li><a href="https://d3k1q7waft5oho.cloudfront.net/media/certificates/Brightest2026035222.pdf" target="_blank"><strong>ISTQB® Certified Tester Foundation Level (CTFL)</strong></a></li>
-                    <li><a href="https://www.coursera.org/account/accomplishments/verify/ZD9TSVNWL939" target="_blank"><strong>Introduction to Psychology - Yale University</strong></a></li>
-                </ul>
-                <h3 data-i18n="courses_title">Cursos</h3>
-                <ul>
-                    <li><a href="https://cursos.alura.com.br/degree/certificate/485d6b12-a9ce-4392-b7d4-5aa70d3801a8?lang" target="_blank">Liderança Técnica & Tecnológica (Alura)</a></li>
-                    <li><a href="https://cursos.alura.com.br/degree/certificate/7f08c4f2-4b8d-4f3f-85d9-9b93a09539ff?lang" target="_blank">Formação Tech Lead (Alura)</a></li>
-                    <li><a href="https://cursos.alura.com.br/degree/certificate/d4b70ded-9897-42a7-9834-95fc2e33dba6" target="_blank">Formação Gestão da Qualidade (Alura)</a></li>
-                    <li><a href="https://cursos.alura.com.br/degree/certificate/aea6deb2-cad2-43c3-931f-0beda917f048?lang=pt_BR" target="_blank">Excel VBA (Alura)</a></li>
-                    <li><a href="https://app.institutofour.org/verify/b1adf8037197cd418d91a0dca53e286978e0cabe" target="_blank">Liderança do Futuro 2025 (Instituto Four)</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
             <h2 data-i18n="proj_title">Projetos</h2>
-            <div class="card">
-                <ul>
-                    <li data-i18n="proj_shopee_cl"><strong>Shopee Chile:</strong> Mentor de QA no lançamento local, definindo fluxos de pagamento e boas práticas (Abril 2022).</li>
-                    <li data-i18n="proj_shopee_ar"><strong>Shopee Argentina:</strong> Mentor de QA no lançamento local, definindo fluxos de pagamento e boas práticas (Nov 2021 - Dez 2021).</li>
-                    <li data-i18n="proj_gaio"><strong>Instituto Gaio:</strong> Fevereiro de 2026 - Presente</li>
-                </ul>
+            
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_ats_title">Ferramenta de Otimização de Currículo (ATS Opt)</div>
+                <div class="project-date" data-i18n="proj_ats_date">Abril 2026 - Presente</div>
+                <div data-i18n="proj_ats_desc">Desenvolvimento assistido por IA de uma ferramenta...</div>
+                <a href="https://ai.studio/apps/8cea3553-209d-453d-a7ea-7fb058e8d417" target="_blank" class="project-link" data-i18n="proj_ats_link">Acessar ATS Opt</a>
             </div>
+
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_trans_title">Ferramenta para Transcrição e Legendagem</div>
+                <div class="project-date" data-i18n="proj_trans_date">Abril 2026 - Presente</div>
+                <div data-i18n="proj_trans_desc">Desenvolvida para dar suporte a atendimentos...</div>
+                <a href="https://ai.studio/apps/22855132-c4be-48e3-9333-1e6cc67a5b7c" target="_blank" class="project-link" data-i18n="proj_trans_link">Acessar Ferramenta</a>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_psyche_title">PsychePortal - Gerenciamento de Pacientes</div>
+                <div class="project-date" data-i18n="proj_psyche_date">Março 2026 - Presente</div>
+                <div data-i18n="proj_psyche_desc">Aplicação web moderna...</div>
+                <a href="https://felipeumbra.github.io/PsychePortal/" target="_blank" class="project-link" data-i18n="proj_psyche_link">Acessar PsychePortal</a>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_quiz_title">Gerador de Quiz Online (CSV Quiz)</div>
+                <div class="project-date" data-i18n="proj_quiz_date">Janeiro 2026 - Presente</div>
+                <div data-i18n="proj_quiz_desc">Aplicação para gerar Quizzes configuráveis através de IA...</div>
+                <a href="https://felipeumbra.github.io/csv-quiz/" target="_blank" class="project-link" data-i18n="proj_quiz_link">Acessar CSV Quiz</a>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_gaio_title">Psicanalista Solidário no Instituto Gaio</div>
+                <div class="project-date" data-i18n="proj_gaio_date">Fevereiro 2026 - Presente</div>
+                <div data-i18n="proj_gaio_desc">Prestar atendimento psicanalítico solidário...</div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_shopee_cl_title">Shopee Chile</div>
+                <div class="project-date" data-i18n="proj_shopee_cl_date">Abril 2022</div>
+                <div data-i18n="proj_shopee_cl_desc">Mentor de QA no lançamento local...</div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-title" data-i18n="proj_shopee_ar_title">Shopee Argentina</div>
+                <div class="project-date" data-i18n="proj_shopee_ar_date">Nov 2021 - Dez 2021</div>
+                <div data-i18n="proj_shopee_ar_desc">Mentor de QA no lançamento local...</div>
+            </div>
+
         </section>
     </div>
 
-    <script>
-        const translations = {
-            "pt-BR": {
-                name: "Felipe Santana Santos",
-                location: "São Paulo, SP",
-                summary_title: "Resumo Profissional",
-                summary_1: "Especialista em Qualidade de Software com quase 20 anos de experiência, foco em mobilidade, sistemas de pagamento e games (Shopee, Monee, Glu Mobile/EA).",
-                summary_2: "QA Lead experiente em gestão de stakeholders, otimização de fluxos de entrega e automação de processos para ganho de eficiência operacional.",
-                summary_3: "Focado em automação de testes, programação JS Vanilla/React com IA e preparação para certificações CTAL.",
-                skills_title: "Competências Técnicas",
-                skill_mgmt: "Gestão de Qualidade:", skill_mgmt_desc: " Liderança de QA, Planejamento estratégico de testes e Gestão de partes interessadas.",
-                skill_tech: "Automação e Dev:", skill_tech_desc: " Python (scripts/cronjobs), Cypress, JavaScript Vanilla, React e ferramentas de IA.",
-                skill_meth: "Práticas e Metodologias:", skill_meth_desc: " Cultura Ágil (Scrum e Kanban), Aprimoramento de operações e acompanhamento de KPIs.",
-                skill_lead: "Gestão de Pessoas:", skill_lead_desc: " Mentoria técnica, Coaching, Evolução de habilidades interpessoais e Coordenação de times.",
-                skill_tools: "Ferramentas:", skill_tools_desc: " Jira (automação via API), GitLab CI/CD, Test Case Management (Excel/Macros), iOS/Android Studio.",
-                exp_title: "Histórico Profissional",
-                monee_role: "Líder de QA", monee_date: "Dez. 2024 - Jan. 2026",
-                monee_1: "Gestão integral da equipe de qualidade, estabelecendo táticas para prevenir gargalos e melhorar a eficiência das entregas diárias.",
-                monee_2: "Automação de tarefas do Jira via Python/GitLab, reduzindo 30h mensais de trabalho manual por membro do time.",
-                shopee_role1: "Líder de QA", shopee_date1: "Mar. 2022 - Nov. 2024",
-                shopee_desc1_1: "Coordenação de times globais e gestão de stakeholders para alinhamento de prazos e capacidade produtiva.",
-                shopee_role2: "Product QA Sênior", shopee_date2: "Jan. 2022 - Mar. 2022",
-                shopee_desc2_1: "Início da automação de frontend com Cypress e desenvolvimento de framework proprietário de gestão de testes via Excel/Macros.",
-                shopee_role3: "Product QA Pleno", shopee_date3: "Nov. 2020 - Dez. 2021",
-                shopee_desc3_1: "Testes funcionais em features de pagamento e fraude, atuando como facilitador e multiplicador de conhecimento no squad.",
-                conduent_role: "Analista de Qualidade", conduent_date: "Set. 2018 - Set. 2020",
-                conduent_1: "Avaliação de métricas operacionais utilizando frameworks ágeis.",
-                conduent_2: "Mapeamento de oportunidades para aprimorar os fluxos de atendimento ao cliente.",
-                xerox_role: "Analista Bilíngue", xerox_date: "Dez. 2013 - Set. 2018",
-                xerox_1: "Verificação de dados de consumo e tratamento de contestações para clientes corporativos de tecnologia.",
-                glu_role: "Analista de QA e Tech Ops", glu_date: "Out. 2010 - Dez. 2012",
-                glu_1: "Testes em jogos globais: Guitar Hero, Lord of the Rings, Gun Bros, Deer Hunter.",
-                glu_2: "Análise de compatibilidade técnica em dispositivos Android, iOS e Java.",
-                proj_title: "Projetos",
-                proj_shopee_cl: "<strong>Shopee Chile:</strong> Mentor de QA no lançamento local, definindo fluxos de pagamento e boas práticas (Abril 2022).",
-                proj_shopee_ar: "<strong>Shopee Argentina:</strong> Mentor de QA no lançamento local, definindo fluxos de pagamento e boas práticas (Nov 2021 - Dez 2021).",
-                proj_gaio: "<strong>Instituto Gaio:</strong> Fevereiro de 2026 - Presente",
-                lang_title: "Idiomas",
-                lang_en: "Inglês:", lang_en_level: "Avançado (C1)",
-                lang_zh: "Chinês:", lang_zh_level: "Básico (A1)",
-                lang_es: "Espanhol:", lang_es_level: "Básico (A2)",
-                edu_graduations: "Graduações",
-                certs_title: "Certificações",
-                courses_title: "Cursos",
-                edu_title: "Formação Educacional",
-                edu_1: "Tecnologia em Jogos Digitais (Foco em Produção) - Centro Universitário Senac",
-                edu_2: "Tecnologia em Análise e Desenvolvimento de Sistemas - Faculdade João XXIII",
-                certs_title: "Certificações",
-                courses_title: "Cursos",
-            },
-            "en": {
-                name: "Felipe Santana Santos",
-                location: "São Paulo, SP",
-                summary_title: "Professional Summary",
-                summary_1: "Software Quality Specialist with nearly 20 years of experience, focusing on mobility, payment systems, and games (Shopee, Monee, Glu Mobile/EA).",
-                summary_2: "Experienced QA Lead in stakeholder management, delivery pipeline optimization, and process automation for operational efficiency.",
-                summary_3: "Focused on test automation, Vanilla JS/React programming with AI tools, and preparing for CTAL certifications.",
-                skills_title: "Technical Skills",
-                skill_mgmt: "Quality Management:", skill_mgmt_desc: " QA Leadership, Strategic test planning, and Stakeholder management.",
-                skill_tech: "Automation & Dev:", skill_tech_desc: " Python (scripts/cronjobs), Cypress, Vanilla JavaScript, React, and AI tools.",
-                skill_meth: "Practices & Methodologies:", skill_meth_desc: " Agile Culture (Scrum and Kanban), Operational improvement, and KPI tracking.",
-                skill_lead: "People Management:", skill_lead_desc: " Technical mentoring, Coaching, Soft skills evolution, and Team coordination.",
-                skill_tools: "Tools:", skill_tools_desc: " Jira (automation via API), GitLab CI/CD, Test Case Management (Excel/Macros), iOS/Android Studio.",
-                exp_title: "Professional Experience",
-                monee_role: "QA Lead", monee_date: "Dec 2024 - Jan 2026",
-                monee_1: "Comprehensive management of the quality team, establishing tactics to prevent bottlenecks and improve the efficiency of daily deliveries.",
-                monee_2: "Jira task automation via Python/GitLab, saving 30h/month of manual work per team member.",
-                shopee_role1: "QA Lead", shopee_date1: "Mar 2022 - Nov 2024",
-                shopee_desc1_1: "Coordination of global teams and stakeholder management for deadline and capacity alignment.",
-                shopee_role2: "Senior Product QA", shopee_date2: "Jan 2022 - Mar 2022",
-                shopee_desc2_1: "Started frontend automation with Cypress and developed a proprietary test management framework via Excel/Macros.",
-                shopee_role3: "Mid-level Product QA", shopee_date3: "Nov 2020 - Dec 2021",
-                shopee_desc3_1: "Functional testing in payment and fraud features, acting as a facilitator and knowledge multiplier within the squad.",
-                conduent_role: "Quality Analyst", conduent_date: "Sep 2018 - Sep 2020",
-                conduent_1: "Evaluation of operational metrics using agile frameworks.",
-                conduent_2: "Mapping of opportunities to improve customer service workflows.",
-                xerox_role: "Bilingual Analyst", xerox_date: "Dec 2013 - Sep 2018",
-                xerox_1: "Verification of consumption data and handling of disputes for corporate technology clients.",
-                glu_role: "QA & Tech Ops Analyst", glu_date: "Oct 2010 - Dec 2012",
-                glu_1: "Testing on global games: Guitar Hero, Lord of the Rings, Gun Bros, Deer Hunter.",
-                glu_2: "Technical compatibility analysis on Android, iOS, and Java devices.",
-                proj_title: "Projects",
-                proj_shopee_cl: "<strong>Shopee Chile:</strong> QA Mentor for local launch, defining payment flows and best practices (April 2022).",
-                proj_shopee_ar: "<strong>Shopee Argentina:</strong> QA Mentor for local launch, defining payment flows and best practices (Nov 2021 - Dec 2021).",
-                proj_gaio: "<strong>Instituto Gaio:</strong> February 2026 - Present",
-                lang_title: "Languages",
-                lang_en: "English:", lang_en_level: "Advanced (C1)",
-                lang_zh: "Chinese:", lang_zh_level: "Basic (A1)",
-                lang_es: "Spanish:", lang_es_level: "Basic (A2)",
-                edu_graduations: "Graduations",
-                certs_title: "Certifications",
-                courses_title: "Courses",
-                edu_title: "Educational Background",
-                edu_1: "Associate Degree in Digital Games (Production Focus) - Centro Universitário Senac",
-                edu_2: "Associate Degree in Systems Analysis and Development - Faculdade João XXIII",
-                certs_title: "Certifications & Courses",
-            }
-        };
-
-        let currentLang = "pt-BR";
-
-        function toggleLanguage() {
-            currentLang = currentLang === "pt-BR" ? "en" : "pt-BR";
-            
-            document.getElementById("langBtn").innerText = currentLang === "pt-BR" ? "EN | English" : "PT | Português";
-            
-            document.querySelectorAll("[data-i18n]").forEach(element => {
-                const key = element.getAttribute("data-i18n");
-                if (translations[currentLang][key]) {
-                    element.innerHTML = translations[currentLang][key];
-                }
-            });
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
